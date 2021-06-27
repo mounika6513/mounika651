@@ -1,0 +1,25 @@
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    char pname;
+    
+    int mp,rm,noruns,nowickets;
+    float avg;
+    printf("enter player name-");
+    scanf("%c",&pname);
+    printf("enter match played by player-");
+    scanf("%d",&mp);
+    printf("enter made by player-");
+    scanf("d",&rm);
+    printf("enter no of runs made-");
+    scanf("%d",&noruns);
+    printf("enter no of wickets");
+    scanf("%d",&nowickets);
+    avg=rm/mp;
+    printf("player name-%c\n",pname);
+    printf("matches\t\t runs\t\t run's \t\t wicket's average_\n");
+    printf("%d \t\t%d\t\t%d\t\t %d\t\t %f",mp,rm,noruns,nowickets,avg);
+    getch();
+}

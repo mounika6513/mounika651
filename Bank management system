@@ -1,0 +1,55 @@
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void login();
+void mainmenu();
+int main()
+{
+    printf("\n\n\t\t\twelcome to banking management system");
+    printf("\n\n\t\tpress any key to continue...");
+    getch();
+    login();
+   
+}
+void login()
+{
+    
+
+char user[15],pass[15];
+    printf("\n\n\t\t\tenter username:");
+    gets(user);
+    printf("\n\n\t\tenter password:");
+    gets(pass);
+    if(strcmp(user,"bank123")==0)
+    {
+        if(strcmp(pass,"Bank123")==0)
+        {
+            printf("\n\n\t\t\tlogin successfull");
+            printf("\n\n\t\t\tpress any key to continue...");
+            getch();
+            mainmenu();
+            }
+            else
+            {
+                printf("invalid password");
+                printf("\n\t\t\tpress any key");
+                getch();
+            }
+            
+        }
+    
+    else
+    {
+        printf("\n\t\t\tinvalid username");
+        printf("press any key");
+        getch();
+        return;
+    }
+    }
+void mainmenu()
+{
+    printf("\n");
+    }
+
+    
